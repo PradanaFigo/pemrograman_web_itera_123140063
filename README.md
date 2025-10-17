@@ -19,8 +19,6 @@ Aplikasi ini dibuat untuk membantu mahasiswa mengelola aktivitas akademik mereka
 <img width="907" height="309" alt="image" src="https://github.com/user-attachments/assets/7fa42b2a-940a-4355-940c-912e4d495797" />
 
 
-> 📌 *Ganti gambar di atas dengan hasil screenshot asli dari aplikasi kamu, simpan di folder `screenshot`.*
-
 ---
 
 ## 🧭 Cara Menjalankan Aplikasi
