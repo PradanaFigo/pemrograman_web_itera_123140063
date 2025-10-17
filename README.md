@@ -31,7 +31,7 @@ Aplikasi ini dibuat untuk membantu mahasiswa mengelola aktivitas akademik mereka
 
 ---
 
-## ✨ Daftar Fitur yang Telah Diimplementasikan
+## Daftar Fitur yang Telah Diimplementasikan
 
 - ✅ Menambahkan tugas baru (nama tugas, mata kuliah, deadline)  
 - ✅ Menandai tugas sebagai selesai/belum selesai  
@@ -43,9 +43,9 @@ Aplikasi ini dibuat untuk membantu mahasiswa mengelola aktivitas akademik mereka
 
 ---
 
-## 🧠 Penjelasan Teknis
+##  Penjelasan Teknis
 
-### 📂 Penyimpanan Data Menggunakan `localStorage`
+###  Penyimpanan Data Menggunakan `localStorage`
 Aplikasi ini menggunakan `localStorage` untuk menyimpan data tugas.  
 Contoh implementasi:
 ```javascript
