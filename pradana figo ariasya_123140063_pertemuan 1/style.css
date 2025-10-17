@@ -77,7 +77,6 @@ button:hover {
   color: gray;
 }
 
-/* Modal */
 .modal {
   display: none;
   position: fixed;
@@ -97,4 +96,5 @@ button:hover {
 .modal-actions {
   text-align: right;
   margin-top: 10px;
+
 }
