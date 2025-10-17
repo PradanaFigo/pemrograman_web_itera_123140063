@@ -8,13 +8,16 @@ Aplikasi ini dibuat untuk membantu mahasiswa mengelola aktivitas akademik mereka
 ## 📸 Screenshot Aplikasi
 
 ### 1. Tampilan Awal & Tambah Tugas
-![Screenshot 1](./screenshot/tambah_tugas.png)
+<img width="1233" height="243" alt="image" src="https://github.com/user-attachments/assets/2f6a40bb-c54e-4f87-8263-9a389dfccc4b" />
+
 
 ### 2. Tugas Tersimpan & Filter
-![Screenshot 2](./screenshot/filter_tugas.png)
+<img width="991" height="472" alt="image" src="https://github.com/user-attachments/assets/64349aa2-5de4-4464-be2a-3aa8b72d1503" />
+
 
 ### 3. Edit & Hapus Tugas
-![Screenshot 3](./screenshot/edit_hapus.png)
+<img width="907" height="309" alt="image" src="https://github.com/user-attachments/assets/7fa42b2a-940a-4355-940c-912e4d495797" />
+
 
 > 📌 *Ganti gambar di atas dengan hasil screenshot asli dari aplikasi kamu, simpan di folder `screenshot`.*
 
@@ -26,7 +29,7 @@ Aplikasi ini dibuat untuk membantu mahasiswa mengelola aktivitas akademik mereka
 2. Clone atau download repository project ini.  
 3. Buka folder project di VS Code.  
 4. Klik kanan pada `index.html` → pilih **“Open with Live Server”**.  
-5. Aplikasi akan berjalan otomatis di browser (misalnya `http://localhost:5500`).
+5. Aplikasi akan berjalan otomatis di browser .
 
 ---
 
