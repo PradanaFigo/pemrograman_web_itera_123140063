@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard Mahasiswa — Pradana</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <header class="header card">
+      <div class="header-left">
+        <div class="avatar">PD</div>
+        <div>
+          <h1>Selamat datang, <span class="name">Pradana!</span></h1>
+          <p class="muted">Atur tugas dan jadwal kuliahmu</p>
+        </div>
+      </div>
+
+      <div class="header-right">
+        <div class="stats-row">
+          <div class="stat card small">
+            <small class="muted">Total Tugas</small>
+            <div id="totalTasks" class="big">0</div>
+          </div>
+          <div class="stat card small">
+            <small class="muted">Tugas Aktif</small>
+            <div id="activeTasks" class="big">0</div>
+          </div>
+          <div class="stat card small">
+            <small class="muted">Tugas Selesai</small>
+            <div id="doneTasks" class="big">0</div>
+          </div>
+          <div class="card small clock">
+            <small id="dateText" class="muted">--</small>
+            <div id="clock" class="big">--:--:--</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="top-panel card">
+      <div class="progress-block">
+        <h3>Progress tugas</h3>
+        <div class="progress-bar-bg">
+          <div id="progressBar" class="progress-bar-fill"></div>
+        </div>
+        <small id="progressText" class="muted">0% selesai</small>
+      </div>
+
+      <div class="quote-block">
+        <h4>Quote harian</h4>
+        <div id="quote" class="muted">Tetap semangat! Pelan Tapi Pasti</div>
+      </div>
+    </section>
+
+    <main class="content-grid">
+      <section class="panel card">
+        <div class="panel-header">
+          <h2>📝 Daftar Tugas</h2>
+        </div>
+
+        <div class="controls">
+          <input id="taskInput" type="text" placeholder="Contoh: Tugas PBO — Bab 3">
+          <input id="taskDate" type="date">
+          <button id="addTaskBtn">Tambah</button>
+        </div>
+
+        <div class="filters">
+          <button class="filter active" data-filter="all">Semua</button>
+          <button class="filter" data-filter="active">Aktif</button>
+          <button class="filter" data-filter="done">Selesai</button>
+        </div>
+
+        <div id="taskList" class="list"></div>
+      </section>
+
+      <aside class="panel card">
+        <div class="panel-header">
+          <h2>📚 Jadwal Kuliah</h2>
+        </div>
+
+        <div class="controls">
+          <input id="scheduleInput" type="text" placeholder="Matkul • Hari • Jam">
+          <button id="addScheduleBtn">Tambah</button>
+        </div>
+
+        <div id="scheduleList" class="list"></div>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <label class="dark-label">
+        <input id="darkToggle" type="checkbox">
+        Dark Mode
+      </label>
+      <div class="footer-muted">© Dashboard — Pradana Figo Ariasya • NIM: 123140063</div>
+    </footer>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
