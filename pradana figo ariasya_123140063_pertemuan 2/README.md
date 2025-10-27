@@ -44,7 +44,8 @@ Key yang digunakan:
 
 ## 📸 Screenshot Aplikasi
 
-> Tambahkan screenshot kamu di sini setelah diambil:
+<img width="1677" height="709" alt="image" src="https://github.com/user-attachments/assets/383ddcbe-ac7a-4037-9176-f2a70c87d1b8" />
+
 
 ---
 
@@ -55,4 +56,5 @@ Key yang digunakan:
 3. Klik ikon ✏ untuk edit atau 🗑 untuk hapus.
 4. Gunakan filter: Semua | Aktif | Selesai.
 5. Aktifkan dark mode dari footer.
+
 
