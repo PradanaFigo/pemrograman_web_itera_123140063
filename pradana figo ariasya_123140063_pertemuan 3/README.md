@@ -13,17 +13,18 @@ Aplikasi ini dibuat sebagai latihan untuk mendemonstrasikan fitur-fitur modern R
 Halaman ini menampilkan filter, pencarian, dan daftar semua buku Anda.
 
 
-> *Ganti URL di atas dengan link screenshot Halaman Utama Anda*
+<img width="1905" height="916" alt="image" src="https://github.com/user-attachments/assets/ed6d77b3-a491-41b9-aa25-7c35346af8c3" />
+
 
 ### Modal Tambah/Edit Buku
 Formulir ini muncul saat Anda menambah atau mengedit buku, lengkap dengan validasi error.
 
-> *Ganti URL di atas dengan link screenshot Modal Anda*
+<img width="1270" height="725" alt="image" src="https://github.com/user-attachments/assets/71e5a584-cbc4-4942-9e93-688f77a31efe" />
 
 ### Halaman Statistik
 Halaman ini menampilkan rincian jumlah total buku berdasarkan statusnya.
 
-> *Ganti URL di atas dengan link screenshot Halaman Statistik Anda*
+<img width="1911" height="708" alt="image" src="https://github.com/user-attachments/assets/bd589a11-1500-4ae9-93fd-d0c80077a77b" />
 
 ---
 
@@ -138,6 +139,7 @@ Tes ini mencakup:
 - ✅ Validasi error
 - ✅ Logika context
 
-> *Ganti URL di atas dengan screenshot terminal Anda setelah `npm test` berjalan sukses*
+![Gambar WhatsApp 2025-11-05 pukul 11 24 14_ec89d42b](https://github.com/user-attachments/assets/181f474e-36aa-4e2f-9a48-237a55b61f82)
+
 
 ---
