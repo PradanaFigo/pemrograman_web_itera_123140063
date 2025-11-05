@@ -1,0 +1,352 @@
+/* =================================
+   Font Import (Baru: Poppins)
+   ================================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* =================================
+   Variabel Tema Hijau Zamrud (Emerald)
+   ================================= */
+:root {
+  --warna-primer: #059669;
+  --warna-primer-gelap: #047857;
+  --warna-primer-terang: #ecfdf5;
+
+  --warna-aksen: #f59e0b;
+  --warna-aksen-gelap: #d97706;
+  --warna-aksen-terang: #fffbeb;
+
+  --warna-bahaya: #ef4444;
+  --warna-bahaya-gelap: #dc2626;
+
+  --teks-utama: #1f2937;
+  --teks-sekunder: #4b5563;
+  --teks-placeholder: #9ca3af;
+  --abu-latar: #f9fafb;
+  --abu-batas: #e5e7eb;
+  --putih: #ffffff;
+
+  /* Shadow Variasi */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* =================================
+   Reset & Global Style
+   ================================= */
+body {
+  font-family: 'Poppins', sans-serif; /* Ganti ke Poppins */
+  margin: 0;
+  background-color: var(--abu-latar);
+  color: var(--teks-utama);
+  line-height: 1.6;
+}
+
+h1, h3 {
+  font-family: 'Poppins', sans-serif; /* Ganti ke Poppins */
+  color: var(--teks-utama);
+  font-weight: 700; /* Buat lebih tebal agar "keren" */
+  letter-spacing: -0.5px;
+}
+
+h3 { font-size: 1.2rem; }
+
+main {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: 0 24px;
+}
+
+footer {
+  text-align: center;
+  padding: 24px;
+  margin-top: 48px;
+  border-top: 1px solid var(--abu-batas);
+  color: var(--teks-placeholder);
+  font-size: 14px;
+}
+
+/* =================================
+   Navbar (Glass Effect + Gradient)
+   ================================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0,0,0,0.03);
+  box-shadow: var(--shadow-sm);
+  
+  /* Membuat header menempel di atas */
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.nav-brand {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--warna-primer);
+}
+
+.nav-links .nav-link {
+  border: none;
+  padding: 8px 16px;
+  margin-left: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 8px;
+  color: var(--teks-sekunder);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.nav-link.active {
+  background-color: var(--warna-primer-terang);
+  color: var(--warna-primer-gelap);
+  font-weight: 600;
+}
+.nav-link:hover:not(.active) {
+  background-color: var(--abu-latar);
+  color: var(--teks-utama);
+}
+
+/* =================================
+   Konten Halaman
+   ================================= */
+.page-container { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 24px;
+
+  /* Ubah page-container menjadi "Kartu" yang mengapung */
+  max-width: 1152px; /* Konten lebih lebar (sebelumnya 960px) */
+  margin: 0 auto; /* Posisikan kartu ini di tengah */
+  background: var(--putih);
+  border-radius: 12px;
+  padding: 24px 32px; /* Padding di dalam kartu */
+  border: 1px solid var(--abu-batas);
+  box-shadow: var(--shadow-md); /* Bayangan lebih jelas */
+}
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* =================================
+   Tombol (Gradient + Natural Hover)
+   ================================= */
+.btn-primary, .btn-secondary, .btn-edit, .btn-delete {
+  border: 1px solid transparent;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-sm);
+  font-family: 'Poppins', sans-serif; /* Pastikan tombol pakai font Poppins */
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #059669, #10b981);
+  color: var(--putih);
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, #047857, #059669);
+  box-shadow: var(--shadow-md);
+}
+.btn-primary:active { transform: scale(0.98); }
+
+.btn-secondary {
+  background-color: #e5e7eb;
+  color: var(--teks-sekunder);
+  border: 1px solid #d1d5db;
+}
+.btn-secondary:hover { background-color: #cbd5e1; color: var(--teks-utama); }
+
+.btn-edit { background: var(--warna-aksen); color: var(--putih); }
+.btn-edit:hover { background-color: var(--warna-aksen-gelap); box-shadow: var(--shadow-md); }
+
+.btn-delete { background: var(--warna-bahaya); color: var(--putih); }
+.btn-delete:hover { background-color: var(--warna-bahaya-gelap); box-shadow: var(--shadow-md); }
+
+/* =================================
+   Filter
+   ================================= */
+.book-filter {
+  display: flex;
+  gap: 16px;
+  background: var(--putih);
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--abu-batas);
+  box-shadow: var(--shadow-sm);
+}
+.filter-search, .filter-status {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--abu-batas);
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif; /* Ganti ke Poppins */
+  background-color: var(--putih);
+  transition: all 0.2s ease;
+}
+.filter-search:focus, .filter-status:focus {
+  border-color: var(--warna-primer);
+  box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.2); /* Efek 'ring' */
+  outline: none;
+}
+.filter-search { flex-grow: 2; }
+.filter-status { flex-grow: 1; }
+
+/* =================================
+   Daftar & Item Buku
+   ================================= */
+.book-list { display: flex; flex-direction: column; gap: 16px; }
+.book-list-empty {
+  text-align: center;
+  padding: 48px;
+  background: var(--putih);
+  border-radius: 8px;
+  color: var(--teks-sekunder);
+  border: 2px dashed var(--abu-batas);
+}
+
+.book-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--putih);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid var(--abu-batas);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.25s ease;
+}
+.book-item:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
+  border-color: var(--warna-primer-terang);
+}
+
+.book-info h3 { margin: 0 0 4px 0; }
+.book-info p { margin: 0; color: var(--teks-sekunder); }
+.book-actions { display: flex; align-items: center; gap: 12px; }
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.status-owned { background-color: #dcfce7; color: #166534; } /* green */
+.status-reading { background-color: #fef3c7; color: #92400e; } /* amber */
+.status-tobuy { background-color: #dbeafe; color: #1e40af; } /* blue */
+
+/* =================================
+   Modal (Smooth Animation)
+   ================================= */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(17, 24, 39, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal-content {
+  background: var(--putih);
+  padding: 32px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  animation: slideDown 0.25s ease;
+}
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: var(--abu-latar);
+  border: none;
+  border-radius: 999px;
+  width: 32px;
+  height: 32px;
+  font-size: 1.25rem;
+  color: var(--teks-sekunder);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+.modal-close-btn:hover { background-color: var(--abu-batas); color: var(--teks-utama); }
+
+/* =================================
+   Form
+   ================================= */
+.book-form { display: flex; flex-direction: column; gap: 16px; }
+.form-group { display: flex; flex-direction: column; }
+.form-group label { margin-bottom: 6px; font-weight: 500; font-size: 14px; }
+.form-group input, .form-group select {
+  padding: 12px;
+  border: 1px solid var(--abu-batas);
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif; /* Ganti ke Poppins */
+  background-color: var(--putih);
+  transition: all 0.2s ease;
+}
+.form-group input:focus, .form-group select:focus {
+  border-color: var(--warna-primer);
+  box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.2); /* Efek 'ring' */
+  outline: none;
+}
+.error-text { color: var(--warna-bahaya); font-size: 14px; margin: 4px 0 0 0; }
+.form-actions { display: flex; justify-content: flex-end; gap: 12px; margin-top: 16px; }
+
+/* =================================
+   Halaman Statistik
+   ================================= */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+  gap: 20px;
+}
+.stats-card {
+  background: var(--putih);
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(135deg, #059669, #10b981);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+}
+.stats-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+.stats-card p { margin: 0 0 4px 0; color: var(--teks-sekunder); font-size: 14px; font-weight: 500; }
+.stats-card span {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--teks-utama);
+} 
