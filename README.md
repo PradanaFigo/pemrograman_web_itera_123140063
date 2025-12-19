@@ -4,7 +4,7 @@ Proyek ini merupakan REST API sederhana untuk mengelola data Matakuliah mengguna
 
 ---
 
-## 🚀 Panduan Instalasi
+##  Panduan Instalasi
 
 Berikut langkah lengkap untuk menyiapkan dan menjalankan aplikasi di lingkungan lokal.
 
@@ -75,7 +75,7 @@ sqlalchemy.url = postgresql://user_matakuliah:pass_matakuliah@localhost:5432/pyr
 
 ---
 
-## 🏃 Menjalankan Aplikasi
+##  Menjalankan Aplikasi
 
 ### 1. Migrasi Database
 
@@ -103,7 +103,7 @@ http://localhost:6543
 
 ---
 
-## 📡 Dokumentasi API
+##  Dokumentasi API
 
 Berikut daftar endpoint yang tersedia.
 
@@ -143,13 +143,13 @@ curl -X DELETE http://localhost:6543/api/matakuliah/2
 
 ---
 
-## 🧪 Pengujian API
+##  Pengujian API
 
 Pengujian bisa dilakukan menggunakan **cURL** atau **Postman**. Semua contoh perintah sudah disertakan untuk memudahkan proses testing.
 
 ---
 
-## 🗄️ Struktur Tabel Matakuliah
+##  Struktur Tabel Matakuliah
 
 | Kolom    | Tipe    | Constraint       | Keterangan           |
 | -------- | ------- | ---------------- | -------------------- |
@@ -161,7 +161,7 @@ Pengujian bisa dilakukan menggunakan **cURL** atau **Postman**. Semua contoh per
 
 ---
 
-## 🔧 Masalah Umum & Solusinya
+##  Masalah Umum & Solusinya
 
 ### Kendala Koneksi Database
 
@@ -188,7 +188,7 @@ listen = localhost:6544
 
 ---
 
-## 👨‍💻 Pengembang
+##  Pengembang
 
 * **Nama:** Pradana Figo Ariasya
 * **NIM:** 123140063
